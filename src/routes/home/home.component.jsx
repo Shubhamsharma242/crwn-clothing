@@ -1,5 +1,3 @@
-import "../../categories.style.scss";
-
 import { Directory } from "../../component/directory/directory.component";
 const Home = () => {
   const categories = [

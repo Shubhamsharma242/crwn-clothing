@@ -5,11 +5,10 @@ import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import "./navigation.style.scss";
 import { SignOutUser } from "../../utils/firebase/firebase.utils";
 const Navigation = () => {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
-  console.log(currentUser);
+  const { currentUser } = useContext(UserContext);
+  // console.log(currentUser);
   const handleSignOut = async () => {
     await SignOutUser();
-    setCurrentUser(null);
   };
   return (
     <Fragment>

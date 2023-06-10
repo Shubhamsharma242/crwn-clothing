@@ -1,7 +1,12 @@
+$breakpoint-tablet: 768px;
 .authentication-container{
     display: flex;
     justify-content: space-between;
     margin: 40px auto;
     width: 90vw;
 
+
+    @media (max-width: $breakpoint-tablet) {
+        flex-direction:column;
+      }
 }

@@ -1,4 +1,7 @@
 {
     "editor.wordWrap": "on",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "editor.quickSuggestionsDelay": 1,
+    "editor.cursorSmoothCaretAnimation": "on"
 }

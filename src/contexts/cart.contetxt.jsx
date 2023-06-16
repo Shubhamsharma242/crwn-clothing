@@ -72,7 +72,7 @@ export const CartProvider = ({ children }) => {
     );
     setCartTotal(newCartTotal);
   }, [cartItems]);
-  console.log(cartTotal);
+  // console.log(cartTotal);
 
   const addItemToCart = (productToAdd) => {
     setCartItems(addCartItem(cartItems, productToAdd));

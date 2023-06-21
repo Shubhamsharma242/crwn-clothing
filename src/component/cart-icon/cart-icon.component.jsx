@@ -1,17 +1,16 @@
 import { useContext } from "react";
 import { CartContext } from "../../contexts/cart.contetxt";
-import "./cart-icon.style.scss";
-import { ReactComponent as ShopingIcon } from "../../assets/shopping-bag.svg";
+import { ShoppingIcon, CartIconContainer, ItemCount } from "./cart-icon.style";
 const CartIcon = () => {
-  const { isCartOpen, setIsCartOpen,cartCount } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
   const toggleIsCartOPen = () => {
     setIsCartOpen(!isCartOpen);
   };
   return (
-    <div className="cart-icon-container" onClick={toggleIsCartOPen}>
-      <ShopingIcon className="shoping-icon" />
-      <span className="item-count">{cartCount}</span>
-    </div>
+    <CartIconContainer onClick={toggleIsCartOPen}>
+      <ShoppingIcon className="shoping-icon" />
+      <ItemCount>{cartCount}</ItemCount>
+    </CartIconContainer>
   );
 };
 

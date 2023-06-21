@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import "./sign-in-form.style.scss";
-import Button from "../button/button.component";
+import { SignInContainer, ButtonsContainer } from "./sign-in-form.style.jsx";
+import Button, { Button_Type_Classes } from "../button/button.component";
 import {
   signInWithGooglePopup,
   signInAuthWithEmailAndPassword,
@@ -49,7 +49,7 @@ const SignInForm = () => {
     }
   };
   return (
-    <div className="sign-in-container">
+    <SignInContainer>
       <h2>Already have an account?</h2>
       <span>sign in with your email and password</span>
       <form
@@ -74,16 +74,20 @@ const SignInForm = () => {
           name="password"
           value={password}
         />
-        <div className="buttons-container">
+        <ButtonsContainer>
           <Button type="submit" onClick={handleSubmit}>
             sign-in
           </Button>
-          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
+          <Button
+            type="button"
+            buttonType={Button_Type_Classes.google}
+            onClick={signInWithGoogle}
+          >
             Google sign-in
           </Button>
-        </div>
+        </ButtonsContainer>
       </form>
-    </div>
+    </SignInContainer>
   );
 };
 export default SignInForm;

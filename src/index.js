@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
-import { UserProvider } from "./contexts/context.component";
+import { UserProvider } from "./contexts/user.context";
 import { CategoriesProvider } from "./contexts/Categories.context";
 import { CartProvider } from "./contexts/cart.contetxt";
 import reportWebVitals from "./reportWebVitals";

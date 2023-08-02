@@ -16,8 +16,8 @@ import {
 
 const Navigation = () => {
   const currentUser = useSelector(selectCurrentUser);
-  const  isCartOpen  = useSelector(selectIsCartOpen)
-  // console.log(isCartOpen);
+  const  isCartOpen  = useSelector(selectIsCartOpen);
+
   const handleSignOut = async () => {
     await SignOutUser();
   };

@@ -12,7 +12,7 @@ import {
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const { price, name, imageUrl } = product;
-  // const { addItemToCart } = useContext(CartContext);
+
   const cartItems = useSelector(selectCartItems);
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
   return (

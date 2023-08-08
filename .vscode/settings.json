@@ -3,5 +3,7 @@
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.inlineSuggest.showToolbar": "onHover",
     "editor.quickSuggestionsDelay": 1,
-    "editor.cursorSmoothCaretAnimation": "on"
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }

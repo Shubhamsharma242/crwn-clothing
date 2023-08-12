@@ -25,3 +25,6 @@ yarn-error.log*
 src/App.css
 src/categories.style.scss
 src/logo.svg
+
+# Local Netlify folder
+.netlify

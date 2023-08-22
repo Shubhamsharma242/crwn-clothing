@@ -43,8 +43,6 @@ export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
 `;
-
-
 /* .checkout-item-container {
   width: 100%;
   display: flex;

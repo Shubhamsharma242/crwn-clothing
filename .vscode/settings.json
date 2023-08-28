@@ -5,5 +5,7 @@
     "editor.quickSuggestionsDelay": 1,
     "editor.cursorSmoothCaretAnimation": "on",
     "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
 }
